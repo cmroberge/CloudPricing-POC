@@ -1,0 +1,14 @@
+1- login:
+az login
+
+2 - set subscription
+az account set --subscription "AzD1N-DpackLiveOptics-Sx01"
+
+3 - Next, enable some relevant APIs for your Azure account:
+az provider register --namespace Microsoft.Compute
+az provider register --namespace Microsoft.Resources
+az provider register --namespace Microsoft.ContainerService
+az provider register --namespace Microsoft.Commerce
+
+2 - create role subscription
+az role definition create --verbose --role-definition @azureSetup.json

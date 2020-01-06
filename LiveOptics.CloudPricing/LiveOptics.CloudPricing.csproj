@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LiveOptics.CloudPricing.Entities\LiveOptics.CloudPricing.Entities.csproj" />
+    <ProjectReference Include="..\LiveOptics.CloudPricing.Service\LiveOptics.CloudPricing.Service.csproj" />
+  </ItemGroup>
+
+</Project>
